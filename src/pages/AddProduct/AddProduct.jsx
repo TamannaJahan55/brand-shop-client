@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 
 
 const AddProduct = () => {
@@ -9,6 +10,7 @@ const AddProduct = () => {
 
         const product_photo = form.product_photo.value;
         const product_name = form.product_name.value;
+        const brand_id = form.brand_id.value;
         const brand_name = form.brand_name.value;
         const brand_photo = form.brand_photo.value;
         const type = form.type.value;
@@ -17,7 +19,7 @@ const AddProduct = () => {
         const adPhoto = form.adPhoto.value;
         const rating = form.rating.value;
 
-        const newProduct = { product_photo, product_name, brand_name, brand_photo, type, price, short_description, adPhoto, rating }
+        const newProduct = { product_photo, product_name, brand_id, brand_name, brand_photo, type, price, short_description, adPhoto, rating }
         console.log(newProduct);
 
         // send data to the server
@@ -31,6 +33,14 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+                if(data.insertedId){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Product added successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                      })
+                }
             })
     }
 
@@ -67,7 +77,7 @@ const AddProduct = () => {
                             <span className="label-text">Brand Id</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="type" placeholder="Brand Id" className="input input-bordered w-full bg-lime-200" />
+                            <input type="text" name="brand_id" placeholder="Brand Id" className="input input-bordered w-full bg-lime-200" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">
