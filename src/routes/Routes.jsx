@@ -7,6 +7,9 @@ import AddProduct from "../pages/AddProduct/AddProduct";
 import BrandedProducts from "../pages/BrandedProducts/BrandedProducts";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
+import ProductDetail from "../pages/ProductDetail/ProductDetail";
+import UpdateProduct from "../pages/UpdateProduct/UpdateProduct";
+
   
   const router = createBrowserRouter([
     {
@@ -23,9 +26,19 @@ import Register from "../pages/Register/Register";
             element: <AddProduct></AddProduct>
         },
         {
-          path: '/brandedProducts',
+          path: '/brandedProducts/:brand_name',
           element: <BrandedProducts></BrandedProducts>,
-          loader: () => fetch('http://localhost:5000/products')
+          loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}`)
+        },
+        {
+          path: '/productDetails/:_id',
+          element: <ProductDetail></ProductDetail>,
+          loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}/${params._id}`)
+        },
+        {
+          path: '/updateProduct/:_id',
+          element: <UpdateProduct></UpdateProduct>,
+          loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}/${params._id}`)
         },
         {
           path: '/login',
