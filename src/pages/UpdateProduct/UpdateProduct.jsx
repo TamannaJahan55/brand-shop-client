@@ -6,7 +6,7 @@ const UpdateProduct = () => {
     const productDetails = useLoaderData();
     console.log(productDetails);
 
-    const { _id, product_photo, product_name, brand_name, brand_photo, short_description, type, price, rating } = productDetails;
+    const { _id, product_photo, product_name, brand_name, brand_photo, short_description, type, price, rating, adPhoto } = productDetails;
 
     const handleUpdateProduct = event => {
         event.preventDefault();
@@ -23,24 +23,24 @@ const UpdateProduct = () => {
         const adPhoto = form.adPhoto.value;
         const rating = form.rating.value;
 
-        const newProduct = { product_photo, product_name, brand_name, brand_photo, type, price, short_description, adPhoto, rating }
-        console.log(newProduct);
+        const updatedProduct = { product_photo, product_name, brand_name, brand_photo, type, price, short_description, adPhoto, rating }
+        console.log(updatedProduct);
 
         // send data to the server
-        fetch('http://localhost:5000/products', {
-            method: 'POST',
+        fetch(`http://localhost:5000/products/${brand_name}/${_id}`, {
+            method: 'PUT',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newProduct)
+            body: JSON.stringify(updatedProduct)
         })
             .then(res => res.json())
             .then(data => {
                 console.log(data)
-                if (data.insertedId) {
+                if (data.modifiedCount>0) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'Product added successfully',
+                        text: 'Product updated successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
@@ -51,7 +51,7 @@ const UpdateProduct = () => {
     return (
         <div>
             <div className="p-24" style={{ backgroundImage: 'url(https://i.ibb.co/g9xdKZh/green-cover.jpg)' }}>
-                <h2 className="text-3xl text-center text-green-700 font-extrabold mb-4">Update a Product: {product_name}</h2>
+                <h2 className="text-3xl text-center text-amber-500 font-extrabold mb-4">Update a Product: {product_name}</h2>
                 <div className="p-10 bg-lime-200 bg-opacity-40 border border-green-700 rounded">
                     <form onSubmit={handleUpdateProduct}>
                         {/* product img url */}
@@ -145,7 +145,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Advertisement Photo URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="adPhoto" defaultValue={} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="adPhoto" defaultValue={adPhoto} className="input input-bordered w-full bg-lime-200" />
                                 </label>
                             </div>
                             <div className="form-control md:w-1/2 ml-4">

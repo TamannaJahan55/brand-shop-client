@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 
 const ProductDetail = () => {
@@ -24,7 +25,7 @@ const ProductDetail = () => {
                                 <p className="text-xl font-medium text-orange-500">Type: {type}</p>
                                 <p className="text-lg font-medium">Price: <span>$</span> {price}</p>
                                 <div className="card-actions">
-                                    <button className="btn text-white normal-case bg-green-700">Add to Cart</button>
+                                    <button className="btn text-white normal-case bg-green-700"><span><AiOutlineShoppingCart></AiOutlineShoppingCart></span>Add to Cart</button>
                                 </div>
                             </div>
                         </div>
