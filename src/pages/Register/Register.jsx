@@ -63,7 +63,6 @@ const Register = () => {
 
     return (
         <div>
-           <Navbar></Navbar>
             <div className="p-24 bg-lime-50" style={{ backgroundImage: 'url(https://i.ibb.co/g9xdKZh/green-cover.jpg)' }}>
                 <h2 className="text-3xl font-bold text-center text-green-700 mb-4">Please Register</h2>
 

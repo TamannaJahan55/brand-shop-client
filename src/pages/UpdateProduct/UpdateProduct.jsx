@@ -84,7 +84,7 @@ const UpdateProduct = () => {
                                 </label>
                                 <div className="form-control">
                                     <div className="input-group">
-                                        <select name="brand_name" className="select select-bordered w-full bg-lime-200">
+                                        <select defaultValue={brand_name} name="brand_name" className="select select-bordered w-full bg-lime-200">
                                             <option disabled selected>Pick Brand</option>
                                             <option defaultValue="LOreal">LOreal</option>
                                             <option defaultValue="Estée Lauder">Estée Lauder</option>
