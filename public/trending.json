@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "product_image": "https://i.ibb.co/dmcY919/Body-Wash.jpg",
+      "product_name": "Body Washes"
+    },
+    {
+      "id": 2,
+      "product_image": "https://i.ibb.co/8Yz3w90/Sun-Protection.jpg",
+      "product_name": "Sun Protection"
+    },
+    {
+      "id": 3,
+      "product_image": "https://i.ibb.co/gjMWywx/fragrance.jpg",
+      "product_name": "Fragrances"
+    },
+    {
+      "id": 4,
+      "product_image": "https://i.ibb.co/TRzkd8v/Shampoo.jpg",
+      "product_name": "Hair Care"
+    },
+    {
+      "id": 5,
+      "product_image": "https://i.ibb.co/mh4Nh2P/Serum.jpg",
+      "product_name": "Serums"
+    },
+    {
+      "id": 6,
+      "product_image": "https://i.ibb.co/n36N7FK/makeup.jpg",
+      "product_name": "Natural Makeup"
+    },
+    {
+      "id": 7,
+      "product_image": "https://i.ibb.co/Dw22h5X/Cleanser.jpg",
+      "product_name": "Cleansers"
+    },
+    {
+      "id": 8,
+      "product_image": "https://i.ibb.co/fGNWbVg/combos.jpg",
+      "product_name": "Combos"
+    }
+  ]
+  

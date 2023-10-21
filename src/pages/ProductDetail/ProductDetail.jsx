@@ -60,7 +60,7 @@ const ProductDetail = () => {
                                 <p className="text-lg font-medium">Price: <span>$</span> {price}</p>
                                 <div className="card-actions">
                                     
-                                        <button onClick={handleAddToCart} className="btn text-white normal-case bg-green-700"><span><AiOutlineShoppingCart></AiOutlineShoppingCart></span>Add to Cart</button>
+                                    <button onClick={handleAddToCart} className="btn text-white normal-case bg-green-700"><span><AiOutlineShoppingCart></AiOutlineShoppingCart></span>Add to Cart</button>
                                     
                                 </div>
                             </div>

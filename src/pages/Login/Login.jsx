@@ -24,12 +24,12 @@ const Login = () => {
             .then(result => {
                     console.log(result);
                     const user = {email}
-                    
+                    console.log(user);
                     toast.success('User logged in successfully',{
                         position: "top-center",
                         theme: "colored"
                     });
-                    // navigate('/')
+                    navigate('/')
             
             })
             .catch(error => {

@@ -53,7 +53,7 @@ const Register = () => {
                             position: "top-center",
                             theme: "colored"
                         })
-                        // navigate('/')
+                        navigate('/')
                     })
             })
             .catch(error => {
