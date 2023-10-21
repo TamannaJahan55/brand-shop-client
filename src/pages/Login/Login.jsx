@@ -23,6 +23,8 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                     console.log(result);
+                    const user = {email}
+                    
                     toast.success('User logged in successfully',{
                         position: "top-center",
                         theme: "colored"

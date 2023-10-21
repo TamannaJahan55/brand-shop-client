@@ -9,7 +9,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ProductDetail from "../pages/ProductDetail/ProductDetail";
 import UpdateProduct from "../pages/UpdateProduct/UpdateProduct";
-import Cart from "../pages/Cart/Cart";
+import MyCart from "../pages/MyCart/MyCart";
 
   
   const router = createBrowserRouter([
@@ -42,8 +42,8 @@ import Cart from "../pages/Cart/Cart";
           loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}/${params._id}`)
         },
         {
-          path: '/cart/:_id',
-          element: <Cart></Cart>
+          path: '/myCart/:_id',
+          element: <MyCart></MyCart>
         },
         {
           path: '/login',

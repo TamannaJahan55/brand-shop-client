@@ -1,12 +1,46 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const ProductDetail = () => {
-
+    
+    const {user} = useContext(AuthContext);
+    console.log(user);
     const productDetails = useLoaderData();
     console.log(productDetails);
     const { _id, product_photo, product_name, brand_name, brand_photo, short_description, type, price, rating } = productDetails;
+
+    const handleAddToCart = event => {
+        event.preventDefault();
+
+        const cartProduct = { product_photo, product_name, brand_name, brand_photo, type, price, short_description, rating, email: user?.email }
+        console.log(cartProduct);
+    
+
+    // send data to the server
+    fetch('http://localhost:5000/cart', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(cartProduct)
+    })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if (data.insertedId) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Product added to cart successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
+            }
+        })
+    }
 
     return (
         <div>
@@ -25,9 +59,9 @@ const ProductDetail = () => {
                                 <p className="text-xl font-medium text-orange-500">Type: {type}</p>
                                 <p className="text-lg font-medium">Price: <span>$</span> {price}</p>
                                 <div className="card-actions">
-                                    <Link to={`/cart/${_id}`}>
-                                        <button className="btn text-white normal-case bg-green-700"><span><AiOutlineShoppingCart></AiOutlineShoppingCart></span>Add to Cart</button>
-                                    </Link>
+                                    
+                                        <button onClick={handleAddToCart} className="btn text-white normal-case bg-green-700"><span><AiOutlineShoppingCart></AiOutlineShoppingCart></span>Add to Cart</button>
+                                    
                                 </div>
                             </div>
                         </div>
