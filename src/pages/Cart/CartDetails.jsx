@@ -40,14 +40,14 @@ const CartDetails = ({ cartItem, cartItems, setCartItems }) => {
     return (
         <div>
             <div className="mt-5">
-            <div className="card w-full h-80 card-side bg-amber-400 shadow-xl">
+            <div className="card w-full h-96 card-side bg-amber-400 shadow-xl">
                     <figure><img className="h-96 md:h-80 lg:h-80" src={product_photo} alt="Movie" /></figure>
                     <div className="card-body w-3/5 md:w-full lg:w-full">
-                        <h2 className="text-sm font-medium md:card-title lg:card-title">{product_name}</h2>
+                        <h2 className="text-lg font-medium md:card-title lg:card-title">{product_name}</h2>
                         <p className="text-sm md:text-2xl lg:text-2xl font-medium text-green-700">{brand_name}</p>
                         <p className="text-sm md:text-xl lg:text-xl text-orange-700 font-medium">{type}</p>
                         <p className="text-sm md:text-lg lg:text-lg font-medium">Price: <span>$</span>{price}</p>
-                        <p className="text-xs md:text-lg lg:text-lg font-medium">User Email: {email}</p>
+                        <p className="text-xs md:text-lg lg:text-lg font-medium">User: {email}</p>
                         <div className="card-actions justify-end">
                             <div className="join">
                                 <button onClick={() => handleDelete(_id)} className="btn bg-red-500 join-item text-white"><span><AiTwotoneDelete></AiTwotoneDelete></span>Delete</button>

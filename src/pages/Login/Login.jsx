@@ -53,13 +53,13 @@ const Login = () => {
 
     return (
         <div>
-            <div className="p-24 bg-lime-50" style={{ backgroundImage: 'url(https://i.ibb.co/g9xdKZh/green-cover.jpg)' }}>
+            <div className="p-10 md:p-20lg:p-24 bg-lime-50" style={{ backgroundImage: 'url(https://i.ibb.co/g9xdKZh/green-cover.jpg)' }}>
                 <h2 className="text-3xl font-bold text-center text-green-700 mb-4">Please Login</h2>
 
                 <div className="hero min-h-screen">
                 <div className="hero-overlay bg-lime-200 bg-opacity-40"></div>
                     <div className="hero-content">
-                        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl shadow-green-700">
+                        <div className="card flex-shrink-0 w-full bg-amber-400 max-w-sm shadow-2xl shadow-green-700">
 
                             <form onSubmit={handleLogin} className="card-body w-full mx-auto">
                                 <div className="form-control">
@@ -78,7 +78,7 @@ const Login = () => {
                                     </label>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn text-lg font-bold text-white normal-case bg-amber-500">Login</button>
+                                    <button className="btn text-lg font-bold text-white normal-case bg-green-700">Login</button>
                                 </div>
                             </form>
                             <div className="w-auto m-auto text-center my-6">

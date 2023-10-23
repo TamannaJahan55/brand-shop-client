@@ -13,10 +13,10 @@ const ProductsCard = ({ products }) => {
                 <div className="card w-full h-96 card-side bg-amber-400 shadow-xl rounded-none">
                     <figure><img className="p-4 h-96" src={product_photo} alt="Movie" /></figure>
                     <div className="card-body w-3/5 md:w-full lg:w-full">
-                        <h2 className="text-sm md:card-title lg:card-title">{product_name}</h2>
-                        <p className="text-2xl font-medium text-green-700">{brand_name}</p>
-                        <p className="text-xl font-medium text-orange-600">{type}</p>
-                        <p className="text-lg font-medium">Price: <span>$</span>{price}</p>
+                        <h2 className="text-lg md:card-title lg:card-title">{product_name}</h2>
+                        <p className="text-sm md:text-2xl lg:text-2xl font-medium text-green-700">{brand_name}</p>
+                        <p className="text-sm md:text-xl lg:text-xl font-medium text-orange-600">{type}</p>
+                        <p className="text-sm md:text-lg font-medium">Price: <span>$</span>{price}</p>
                         <div className="rating">
                             <input type="radio" name="rating-2" className="mask mask-star-2 bg-green-700" />
                             <input type="radio" name="rating-2" className="mask mask-star-2 bg-green-700" />
@@ -24,7 +24,7 @@ const ProductsCard = ({ products }) => {
                             <input type="radio" name="rating-2" className="mask mask-star-2 bg-green-700" checked/>
                             <input type="radio" name="rating-2" className="mask mask-star-2 bg-green-700" />
                         </div>
-                        <p className="text-lg font-medium">Rating: {rating}</p>
+                        <p className="text-sm md:text-lg font-medium">Rating: {rating}</p>
                         <div className="card-actions justify-end">
                             <div className="join">
                                 <Link to={`/productDetails/${_id}`}>

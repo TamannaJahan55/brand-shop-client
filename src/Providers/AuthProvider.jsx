@@ -13,6 +13,7 @@ const githubProvider = new GithubAuthProvider();
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [darkMode, setDarkMode] = useState(true);
     
 
     // google login
@@ -64,9 +65,12 @@ const AuthProvider = ({children}) => {
     }
         , [])
 
+
     const authInfo = {
         user,
         loading,
+        darkMode,
+        setDarkMode,
         createUser,
         logOut,
         signIn,
