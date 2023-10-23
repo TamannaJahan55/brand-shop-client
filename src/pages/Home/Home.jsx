@@ -3,7 +3,7 @@ import Banner from "../Shared/Banner";
 import BrandCard from "./BrandCard";
 import Trending from "../Shared/Trending";
 import Footer from "../Footer/Footer";
-import Offer from "../Offer/Offer";
+import Offer from "../Shared/Offer";
 
 
 

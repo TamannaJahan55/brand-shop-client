@@ -4,7 +4,6 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGoogle, FaGithub } from 'react-icons/fa';
-import Navbar from "../Shared/Navbar";
 
 
 const Login = () => {
@@ -79,7 +78,7 @@ const Login = () => {
                                     </label>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn text-lg font-bold text-white normal-case bg-green-700">Login</button>
+                                    <button className="btn text-lg font-bold text-white normal-case bg-amber-500">Login</button>
                                 </div>
                             </form>
                             <div className="w-auto m-auto text-center my-6">
@@ -90,7 +89,7 @@ const Login = () => {
                     </div>
                 </div>
 
-                <p className="text-center mt-4 mb-10">Do not have an account? <Link className="text-green-700 font-bold" to='/register'>Register</Link></p>
+                <p className="text-center mt-4 mb-10">Do not have an account? <Link className="text-amber-500 font-bold" to='/register'>Register</Link></p>
             </div>
             <ToastContainer></ToastContainer>
         </div>

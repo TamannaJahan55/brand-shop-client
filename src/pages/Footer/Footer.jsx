@@ -1,4 +1,4 @@
-
+import photo from '../../assets/green cosmetics.jpg'
 
 const Footer = () => {
     return (
@@ -9,6 +9,11 @@ const Footer = () => {
                     <a className="link link-hover">Contact</a>
                     <a className="link link-hover">Brands</a>
                     <a className="link link-hover">Trending</a>
+                </nav>
+                <nav>
+                    <div className='shadow-2xl shadow-orange-400'>
+                        <img src={photo} alt="" />
+                    </div>
                 </nav>
                 <nav>
                     <div className="grid grid-flow-col gap-4">

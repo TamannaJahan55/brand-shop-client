@@ -2,31 +2,67 @@
     {
         "id": 1,
         "brand_name": "LOreal",
-        "brand_image": "https://i.ibb.co/cbJNhtG/loreal-logo-3.jpg"
+        "brand_image": "https://i.ibb.co/cbJNhtG/loreal-logo-3.jpg",
+        "product_image": "https://i.ibb.co/dmcY919/Body-Wash.jpg",
+        "product_name": "Body Washes",
+        "adPhoto1": "https://i.ibb.co/PQGxPv1/loreal-ad-1.jpg",
+        "adPhoto2": "https://i.ibb.co/gwMcwGg/loreal-ad-4.jpg",
+        "adPhoto3": "https://i.ibb.co/3cGbTkH/loreal-ad-2.png",
+        "adPhoto4": "https://i.ibb.co/K0r2tJ3/loreal-ad-3.jpg"
     },
     {
         "id": 2,
         "brand_name": "Estée Lauder",
-        "brand_image": "https://i.ibb.co/R3fDNkV/estee-lauder-logo.jpg"
+        "brand_image": "https://i.ibb.co/R3fDNkV/estee-lauder-logo.jpg",
+        "product_image": "https://i.ibb.co/8Yz3w90/Sun-Protection.jpg",
+        "product_name": "Sun Protection",
+        "adPhoto1": "https://i.ibb.co/kMyjKMW/astee-lauder-ad-1.jpg",
+        "adPhoto2": "https://i.ibb.co/s2CNQKM/astee-lauder-ad-2.png",
+        "adPhoto3": "https://i.ibb.co/H2V0432/astee-lauder-ad-3.jpg",
+        "adPhoto4": "https://i.ibb.co/tJ7Lrrp/astee-lauder-ad-4.png"
     },
     {
         "id": 3,
         "brand_name": "Chanel",
-        "brand_image": "https://i.ibb.co/b3BHMBn/chanel-logo.jpg"
+        "brand_image": "https://i.ibb.co/b3BHMBn/chanel-logo.jpg",
+        "product_image": "https://i.ibb.co/gjMWywx/fragrance.jpg",
+        "product_name": "Fragrances",
+        "adPhoto1": "https://i.ibb.co/zHy8XJS/chanel-ad-4.jpg",
+        "adPhoto2": "https://i.ibb.co/b17dj0X/chanel-ad-2.jpg",
+        "adPhoto3": "https://i.ibb.co/bHJCcdz/chanel-ad-1.jpg",
+        "adPhoto4": "https://i.ibb.co/zRHwB6C/chanel-ad-3.jpg"
     },
     {
         "id": 4,
         "brand_name": "Urban Decay",
-        "brand_image": "https://i.ibb.co/1vPyMh7/urban-decay-logo.jpg"
+        "brand_image": "https://i.ibb.co/1vPyMh7/urban-decay-logo.jpg",
+        "product_image": "https://i.ibb.co/TRzkd8v/Shampoo.jpg",
+        "product_name": "Hair Care",
+        "adPhoto1": "https://i.ibb.co/yy5vJZt/UD-ad-4.jpg",
+        "adPhoto2": "https://i.ibb.co/xJCS0X5/UD-ad-3.jpg",
+        "adPhoto3": "https://i.ibb.co/3T8L9yh/UD-ad-2.png",
+        "adPhoto4": "https://i.ibb.co/D9NGWfM/UD-ad-1.jpg"
     },
     {
         "id": 5,
         "brand_name": "Procter & Gamble",
-        "brand_image": "https://i.ibb.co/B2WQXm0/procter-gamble-logo.jpg"
+        "brand_image": "https://i.ibb.co/B2WQXm0/procter-gamble-logo.jpg",
+        "product_image": "https://i.ibb.co/mh4Nh2P/Serum.jpg",
+        "product_name": "Serums",
+        "adPhoto1": "https://i.ibb.co/t43j78r/P-G-ad-1.jpg",
+        "adPhoto2": "https://i.ibb.co/PtWm2P9/P-G-ad-2.jpg",
+        "adPhoto3": "https://i.ibb.co/GkdxLJX/P-G-ad-3.jpg",
+        "adPhoto4": "https://i.ibb.co/fQdRc2L/P-G-ad-4.jpg"
     },
     {
         "id": 6,
         "brand_name": "Avon",
-        "brand_image": "https://i.ibb.co/6Y58XVg/avon-logo-3.jpg"
+        "brand_image": "https://i.ibb.co/6Y58XVg/avon-logo-3.jpg",
+        "product_image": "https://i.ibb.co/n36N7FK/makeup.jpg",
+        "product_name": "Natural Makeup",
+        "adPhoto1": "https://i.ibb.co/n71KWRG/avon-ad-1.jpg",
+        "adPhoto2": "https://i.ibb.co/84BpJny/avon-ad-3.jpg",
+        "adPhoto3": "https://i.ibb.co/ct1NXHs/avon-ad-2.jpg",
+        "adPhoto4": "https://i.ibb.co/2q23KM0/avon-ad-4.jpg"
     }
 ]

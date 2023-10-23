@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import logo from '../../assets/evergreen-logo2.png'
 
 
 const Navbar = () => {
@@ -35,7 +36,7 @@ const Navbar = () => {
         </NavLink></li>
     </>
     return (
-        <div className="navbar bg-lime-50">
+        <div className="navbar bg-amber-400">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,7 +46,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <img src='' alt="" />
+                <img src={logo} alt="" />
                 <a className="btn btn-ghost normal-case text-xs md:text-xl lg:text-xl font-mono text-green-700">Evergreen</a>
             </div>
             <div className="navbar-center hidden lg:flex">

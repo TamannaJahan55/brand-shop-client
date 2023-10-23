@@ -11,12 +11,14 @@ import ProductDetail from "../pages/ProductDetail/ProductDetail";
 import UpdateProduct from "../pages/UpdateProduct/UpdateProduct";
 import Cart from "../pages/Cart/Cart";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
   
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: '/',
@@ -30,17 +32,17 @@ import PrivateRoute from "./PrivateRoute";
         {
           path: '/brandedProducts/:brand_name',
           element: <BrandedProducts></BrandedProducts>,
-          loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}`)
+          loader: ({params}) => fetch(`https://brand-shop-server-six-rho.vercel.app/products/${params.brand_name}`)
         },
         {
           path: '/productDetails/:_id',
           element: <PrivateRoute><ProductDetail></ProductDetail></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}/${params._id}`)
+          loader: ({params}) => fetch(`https://brand-shop-server-six-rho.vercel.app/products/${params.brand_name}/${params._id}`)
         },
         {
           path: '/updateProduct/:_id',
           element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/products/${params.brand_name}/${params._id}`)
+          loader: ({params}) => fetch(`https://brand-shop-server-six-rho.vercel.app/products/${params.brand_name}/${params._id}`)
         },
         {
           path: '/cart',

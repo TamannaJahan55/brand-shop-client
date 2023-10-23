@@ -27,7 +27,7 @@ const UpdateProduct = () => {
         console.log(updatedProduct);
 
         // send data to the server
-        fetch(`http://localhost:5000/products/${brand_name}/${_id}`, {
+        fetch(`https://brand-shop-server-six-rho.vercel.app/products/${brand_name}/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -51,7 +51,7 @@ const UpdateProduct = () => {
     return (
         <div>
             <div className="p-24" style={{ backgroundImage: 'url(https://i.ibb.co/g9xdKZh/green-cover.jpg)' }}>
-                <h2 className="text-3xl text-center text-amber-500 font-extrabold mb-4">Update a Product: {product_name}</h2>
+                <h2 className="text-5xl text-center text-orange-500 font-extrabold mb-4">Update a Product: {product_name}</h2>
                 <div className="p-10 bg-lime-200 bg-opacity-40 border border-green-700 rounded">
                     <form onSubmit={handleUpdateProduct}>
                         {/* product img url */}
@@ -61,7 +61,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Product image URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="product_photo" defaultValue={product_photo} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="product_photo" defaultValue={product_photo} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Product Name</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="product_name" defaultValue={product_name} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="product_name" defaultValue={product_name} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ const UpdateProduct = () => {
                                 </label>
                                 <div className="form-control">
                                     <div className="input-group">
-                                        <select defaultValue={brand_name} name="brand_name" className="select select-bordered w-full bg-lime-200">
+                                        <select defaultValue={brand_name} name="brand_name" className="select select-bordered w-full bg-amber-400">
                                             <option disabled selected>Pick Brand</option>
                                             <option defaultValue="LOreal">LOreal</option>
                                             <option defaultValue="Estée Lauder">Estée Lauder</option>
@@ -104,7 +104,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Brand Image URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="brand_photo" defaultValue={brand_photo} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="brand_photo" defaultValue={brand_photo} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -115,7 +115,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Type</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="type" defaultValue={type} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="type" defaultValue={type} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                             <div className="form-control md:w-1/2 ml-4">
@@ -123,7 +123,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Price</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="price" defaultValue={price} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="price" defaultValue={price} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Short Description</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="short_description" defaultValue={short_description} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="short_description" defaultValue={short_description} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Advertisement Photo URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="adPhoto" defaultValue={adPhoto} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="adPhoto" defaultValue={adPhoto} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                             <div className="form-control md:w-1/2 ml-4">
@@ -153,7 +153,7 @@ const UpdateProduct = () => {
                                     <span className="label-text">Rating 1-5</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="rating" defaultValue={rating} className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="rating" defaultValue={rating} className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>

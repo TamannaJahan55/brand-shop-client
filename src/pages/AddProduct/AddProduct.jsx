@@ -23,7 +23,7 @@ const AddProduct = () => {
         console.log(newProduct);
 
         // send data to the server
-        fetch('http://localhost:5000/products', {
+        fetch('https://brand-shop-server-six-rho.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -47,7 +47,7 @@ const AddProduct = () => {
     return (
         <div>
             <div className="p-24" style={{ backgroundImage: 'url(https://i.ibb.co/g9xdKZh/green-cover.jpg)' }}>
-                <h2 className="text-3xl text-center text-green-700 font-extrabold mb-4">Add a Product</h2>
+                <h2 className="text-5xl text-center text-green-700 font-extrabold mb-4">Add a Product</h2>
                 <div className="p-10 bg-lime-200 bg-opacity-40 border border-green-700 rounded">
                     <form onSubmit={handleAddProduct}>
                         {/* product img url */}
@@ -57,7 +57,7 @@ const AddProduct = () => {
                                     <span className="label-text">Product image URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="product_photo" placeholder="Product image URL" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="product_photo" placeholder="Product image URL" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const AddProduct = () => {
                                     <span className="label-text">Product Name</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="product_name" placeholder="Product Name" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="product_name" placeholder="Product Name" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ const AddProduct = () => {
                                 </label>
                                 <div className="form-control">
                                     <div className="input-group">
-                                        <select name="brand_name" className="select select-bordered w-full bg-lime-200">
+                                        <select name="brand_name" className="select select-bordered w-full bg-amber-400">
                                             <option disabled selected>Pick Brand</option>
                                             <option defaultValue="LOreal">LOreal</option>
                                             <option defaultValue="Estée Lauder">Estée Lauder</option>
@@ -100,7 +100,7 @@ const AddProduct = () => {
                                     <span className="label-text">Brand Image URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="brand_photo" placeholder="Brand Image URL" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="brand_photo" placeholder="Brand Image URL" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ const AddProduct = () => {
                                     <span className="label-text">Type</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="type" placeholder="Type" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="type" placeholder="Type" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                             <div className="form-control md:w-1/2 ml-4">
@@ -119,7 +119,7 @@ const AddProduct = () => {
                                     <span className="label-text">Price</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="price" placeholder="Price" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="price" placeholder="Price" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -130,7 +130,7 @@ const AddProduct = () => {
                                     <span className="label-text">Short Description</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="short_description" placeholder="Short Description" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="short_description" placeholder="Short Description" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
@@ -141,7 +141,7 @@ const AddProduct = () => {
                                     <span className="label-text">Advertisement Photo URL</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="adPhoto" placeholder="Advertisement Photo URL" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="adPhoto" placeholder="Advertisement Photo URL" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                             <div className="form-control md:w-1/2 ml-4">
@@ -149,7 +149,7 @@ const AddProduct = () => {
                                     <span className="label-text">Rating 1-5</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full bg-lime-200" />
+                                    <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full bg-amber-400" />
                                 </label>
                             </div>
                         </div>
