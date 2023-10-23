@@ -42,11 +42,21 @@ const BrandedProducts = () => {
                         </div>
                     </div>
                 </div>
-                <h2 className="text-5xl text-center font-extrabold text-green-700 mt-5">Branded Products</h2>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-                    {
-                        brandedProducts.map(products => <ProductsCard key={products} products={products}></ProductsCard>)
-                    }
+
+                <div className="mt-5">
+                    <h2 className="text-5xl text-center font-extrabold text-green-700">Branded Products</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+                        {brandedProducts.length > 0 ?
+
+                            brandedProducts?.map(products => <ProductsCard key={products} products={products}></ProductsCard>)
+                            :
+                            <div>
+                                <p className="text-5xl lg:ml-96 mt-10 font-extrabold text-center text-red-500">We Are Sorry!!!</p>
+                                <img className="md:ml-72 lg:ml-96 mt-4" src="https://i.ibb.co/L0jpv7p/Product-Not-Found.png" alt="" />
+                            </div>
+
+                        }
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,7 +4,6 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import Navbar from "../Shared/Navbar";
 
 
 const Register = () => {

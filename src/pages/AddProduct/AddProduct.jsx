@@ -1,5 +1,4 @@
 import Swal from "sweetalert2";
-import Navbar from "../Shared/Navbar";
 
 
 const AddProduct = () => {

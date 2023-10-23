@@ -1,9 +1,10 @@
 import { AiTwotoneDelete} from 'react-icons/ai';
 import Swal from 'sweetalert2';
+import PropTypes from 'prop-types';
 
 const CartDetails = ({ cartItem, cartItems, setCartItems }) => {
 
-    const { _id, product_photo, product_name, brand_name, brand_photo, type, price, short_description, rating, email } = cartItem;
+    const { _id, product_photo, product_name, brand_name, type, price, email } = cartItem;
 
     const handleDelete = _id => {
         Swal.fire({
@@ -61,3 +62,9 @@ const CartDetails = ({ cartItem, cartItems, setCartItems }) => {
 };
 
 export default CartDetails;
+
+CartDetails.propTypes = {
+    cartItem: PropTypes.object.isRequired,
+    cartItems: PropTypes.node,
+    setCartItems: PropTypes.node
+}

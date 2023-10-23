@@ -1,6 +1,6 @@
 ## Add at least five bullet points about your project.
 
-#### I have created a Cosmetics and Beauty Brand Website named "Evergreen". 5 points about my project are given below:
+#### I have created a Cosmetics and Beauty category based Brand Website named "Evergreen". 5 points about my project are given below:
 
 - **User-Friendly Navigation:** The Evergreen cosmetics and beauty website features a well-structured navbar that offers easy access to various sections. It includes the company's logo and website name ("Evergreen") along with five primary routes: Home, Add Product, My Cart, Login, and Register. The navbar also dynamically adjusts, displaying a user's name, photo, and a "Sign Out" button if they are logged in, or showing a "Login" button if they are not logged in.
 

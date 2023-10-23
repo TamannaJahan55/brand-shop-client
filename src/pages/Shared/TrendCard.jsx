@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const TrendCard = ({trendProduct}) => {
 
@@ -16,3 +16,7 @@ const TrendCard = ({trendProduct}) => {
 };
 
 export default TrendCard;
+
+TrendCard.propTypes = {
+    trendProduct: PropTypes.object.isRequired
+}

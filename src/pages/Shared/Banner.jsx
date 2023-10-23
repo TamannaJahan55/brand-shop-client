@@ -1,3 +1,5 @@
+import Marquee from "react-marquee-slider";
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -12,8 +14,15 @@ const Banner = () => {
                         </div>
                         <div className="max-w-md">
                             <h1 className="mb-5 text-5xl text-green-700 font-extrabold">Evergreen</h1>
-                            <p className="mb-3 text-4xl text-orange-500 font-bold">Cosmetics and Beauty</p>
-                            <p className="mb-3 text-3xl text-amber-500 font-bold">Get the skin you want to feel</p>
+                            <div className="hidden md:flex">
+                                <Marquee pauseOnHover={true} speed={50}>
+                                    <Link className="mr-12 text-4xl text-orange-500 font-bold" to="/">Cosmetics and Beauty.....</Link>
+                                    <Link className="mr-12 text-4xl text-orange-500 font-bold" to="/">Cosmetics and Beauty.....</Link>
+                                    <Link className="mr-12 text-4xl text-orange-500 font-bold" to="/">Cosmetics and Beauty.....</Link>
+                                </Marquee>
+                            </div>
+                            <p className="mb-3 text-4xl text-orange-500 font-bold md:hidden">Cosmetics and Beauty</p>
+                            <p className="mb-3 mt-3 text-3xl text-amber-500 font-bold">Get the skin you want to feel</p>
                             <p className="text-2xl text-orange-500 font-medium">Made using clean, non-toxic ingredients, our products are designed for everyone.</p>
 
                         </div>

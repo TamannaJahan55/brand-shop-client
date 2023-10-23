@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
 const BrandCard = ({ brand }) => {
-    const { id, brand_name, brand_image } = brand;
+    const {  brand_name, brand_image } = brand;
     return (
         <Link to={`/brandedProducts/${brand_name}`}>
             <div className="card card-compact h-96 bg-amber-400 shadow-xl shadow-lime-400 rounded-none">
@@ -16,3 +17,7 @@ const BrandCard = ({ brand }) => {
 };
 
 export default BrandCard;
+
+BrandCard.propTypes = {
+    brand: PropTypes.object.isRequired
+}
